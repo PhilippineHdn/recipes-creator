@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 0;
     margin: 0;
+    font-family: 'Gruppo';
 }
 
 #recipe {
@@ -27,13 +28,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.betweenwaves:first-of-type {
+#betweenwave1, #betweenwave3 {
     background-color: #fdc3a0;
 }
 
-.betweenwaves:last-of-type {
+#betweenwave2 {
     background-color: #b198aa;
 }
 
@@ -45,10 +48,48 @@
     margin-top: -5px;
 }
 
-#sentence {
-    font-family: 'Gruppo';
+#sentence, #recipe {
     width: 80%;
     font-size: 250%;
     text-align: center;
     margin: auto;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 150%;
+  }
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 200%;
+  }
+
+label {
+    font-size: 200%;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+#formIngredients {
+    width: 85%;
+    border-radius: 5px;
+    background-color: #fdc3a0;
+    padding: 20px;
+    margin: 50px auto;
+  }
