@@ -1,3 +1,54 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
 #recipe {
     white-space: pre-wrap;
+}
+
+#body {
+    margin: auto;
+    max-width: 600px;
+    background-color: #f8e7e6;
+    border-radius: 10px;
+}
+
+.picture {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 50px 0;
+}
+
+.betweenwaves {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.betweenwaves:first-of-type {
+    background-color: #fdc3a0;
+}
+
+.betweenwaves:last-of-type {
+    background-color: #b198aa;
+}
+
+.wave {
+    margin-bottom: -5px;
+}
+
+#wave2 {
+    margin-top: -5px;
+}
+
+#sentence {
+    font-family: 'Gruppo';
+    width: 80%;
+    font-size: 250%;
+    text-align: center;
+    margin: auto;
 }
