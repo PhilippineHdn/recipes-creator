@@ -1,3 +1,11 @@
+:root {
+    --maincolor: #f09173;
+    --secondcolor: #ffebe1;
+    --thirdcolor: #f8d6ca;
+    --fourthcolor: #d3614b;
+    --fifthcolor: #fed521; 
+}
+
 * {
     box-sizing: border-box;
     border: 0;
@@ -6,13 +14,14 @@
 }
 
 #recipe {
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
+    font-weight: bold;
 }
 
 #body {
     margin: auto;
     max-width: 600px;
-    background-color: #f8e7e6;
+    background-color: var(--thirdcolor);
     border-radius: 10px;
 }
 
@@ -33,23 +42,23 @@
 }
 
 #betweenwave1, #betweenwave3 {
-    background-color: #fdc3a0;
+    background-color: var(--maincolor);
 }
 
 #betweenwave2 {
-    background-color: #b198aa;
+    background-color: var(--fifthcolor);
 }
 
 .wave {
     margin-bottom: -5px;
 }
 
-#wave2 {
+.wave2 {
     margin-top: -5px;
 }
 
-#sentence, #recipe {
-    width: 80%;
+.sentence, #recipe {
+    width: 90%;
     font-size: 250%;
     text-align: center;
     margin: auto;
@@ -89,7 +98,9 @@ input[type=submit]:hover {
 #formIngredients {
     width: 85%;
     border-radius: 5px;
-    background-color: #fdc3a0;
+    background-color: var(--secondcolor);
     padding: 20px;
     margin: 50px auto;
+    -webkit-box-shadow: 5px 5px 15px 5px #707070; 
+    box-shadow: 5px 5px 15px 5px #707070;
   }
